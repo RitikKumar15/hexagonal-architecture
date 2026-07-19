@@ -14,7 +14,7 @@ git add .
 set /p commitMsg="Enter your commit message: "
 git commit -m "%commitMsg%"
 
-echo [4/4] Pushing & Raising PR...
+echo [4/4] Pushing and Raising PR...
 git push origin HEAD
 gh pr create --title "%commitMsg%" --body "Automated PR: Build, Test & Sonar passed locally."
 
